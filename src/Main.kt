@@ -1,5 +1,6 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner
 fun main() {
     val name = "Kotlin"
     //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
@@ -11,7 +12,10 @@ fun main() {
         // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
         println("i = $i")
     }
-    println("Hello, " + "a")
+    val scanner = Scanner(System.`in`)
+    val N = scanner.nextInt()
+
+    println("${N::class.simpleName}")
 
 }
 
