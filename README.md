@@ -1,1 +1,1 @@
-aaaaa
+kotlinの学習記録
