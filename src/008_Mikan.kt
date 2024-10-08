@@ -21,12 +21,8 @@ fun main(args: Array<String>) {
             println((w / N) * N)
             continue
         }
-        if(N % 2 != 0){
-            if(work < (N / 2) + 1){
-                println((w / N) * N)
-            } else {
-                println(((w + N) / N) * N)
-            }
+        if(N % 2 != 0 && work < (N / 2) + 1){
+            println((w / N) * N)
         } else if(work < (N / 2)){
             println((w / N) * N)
         } else {
