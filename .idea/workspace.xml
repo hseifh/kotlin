@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ca467a9-38bc-4f69-be72-ba52ea6920f0" name="Changes" comment="10/09">
+    <list default="true" id="8ca467a9-38bc-4f69-be72-ba52ea6920f0" name="Changes" comment="10/11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/010.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/010.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +55,7 @@
     "Kotlin.MainKt.executor": "Run",
     "Kotlin._001Kt.executor": "Run",
     "Kotlin._001_Fizz_BuzzKt.executor": "Run",
+    "Kotlin._010Kt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -197,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728410473599</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="10/11">
+      <option name="closed" value="true" />
+      <created>1728578588370</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1728578588370</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,7 +233,8 @@
     <MESSAGE value="10/06" />
     <MESSAGE value="10/07" />
     <MESSAGE value="10/09" />
-    <option name="LAST_COMMIT_MESSAGE" value="10/09" />
+    <MESSAGE value="10/11" />
+    <option name="LAST_COMMIT_MESSAGE" value="10/11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
