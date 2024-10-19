@@ -23,6 +23,11 @@ fun main(args: Array<String>) {
         }
         if(work < (N / 2)){
             println((w / N) * N)
+
+
+
+
+
         } else {
             println(((w + N) / N) * N)
         }

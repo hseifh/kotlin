@@ -1,11 +1,10 @@
-import java.io.BufferedReader
-import java.io.InputStreamReader
+package test1
 
-class Person(var name: String, var age: Int)
+private class Person1(var name: String, var age: Int)
 
 fun main(args: Array<String>) {
 
-    val  p = Person("鈴木",23)
+    val  p = Person1("鈴木",23)
     println(p.name + " " + p.age)
     p.name = "佐藤"
     p.age = 43
