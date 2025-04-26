@@ -17,6 +17,7 @@ fun main(args: Array<String>) {
         println(item.alphabettr)
         println(item.order)
     }
+
 }
 
 class Alphabettr(
