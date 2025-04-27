@@ -16,11 +16,7 @@ fun main(args: Array<String>) {
     }
     val ans1 = calculation(s + t)
     val ans2 = calculation(t + s)
-    if(ans1 >= ans2){
-        println(ans1)
-    }else{
-        println(ans2)
-    }
+    println(maxOf(ans1, ans2))
 }
 fun calculation(str: String): Int {
     var numberList = mutableListOf<Int>()
@@ -36,7 +32,7 @@ fun calculation(str: String): Int {
 }
 fun sumNumbers(numbers: List<Int>): Int {
     if(numbers.size == 1){
-        return numbers.get(0)
+        return numbers.first()
     } else {
         var numberList = mutableListOf<Int>()
         for (i in 0..(numbers.size - 2)) {
