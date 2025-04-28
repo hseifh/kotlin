@@ -31,10 +31,40 @@ fun main(args: Array<String>) {
         println()
     }
     */
-    var ans = 0
+    var combo = 0
+    var maxCombo = 0
     for (i in 0 until M) {
-
+        var flag = true
+        for (j in 0 until N) {
+            when (musicData[i][j]) {
+                "-" -> {
+                    if(playData[i][j] != musicData[i][j]){
+                        flag = false
+                        break
+                    }
+                }
+                "+" -> {
+                    if(playData[i][j] != musicData[i][j]){
+                        flag = false
+                        break
+                    }
+                }
+                "#" -> {
+                    if(playData[i][j] != "+"){
+                        flag = false
+                        break
+                    }
+                }
+            }
+        }
+        if(flag){
+            combo++
+            if(combo > maxCombo){
+                maxCombo = combo
+            }
+        }else{
+            combo = 0
+        }
     }
-
-
+    println(maxCombo)
 }
