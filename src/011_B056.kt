@@ -1,5 +1,3 @@
-//https://paiza.jp/works/challenges/384/retry
-
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
@@ -10,7 +8,6 @@ fun main(args: Array<String>) {
     val M = stStr.split(" ")[1].toInt()
     val musicData = Array(M) { Array(N) { "" } }
     val playData = Array(M) { Array(N) { "" } }
-
     for (i in 0 until M) {
         stStr = br.readLine()
         for (j in 0 until N) {
@@ -18,46 +15,78 @@ fun main(args: Array<String>) {
             playData[i][j] = stStr.get(j + (N + 1)).toString()
         }
     }
-    /*
-    println("" + N + " " + M)
-    for (i in 0 until M) {
-        for (j in 0 until N) {
-            print(musicData[i][j])
-        }
-        print(" ")
-        for (j in 0 until N) {
-            print(playData[i][j])
-        }
-        println()
-    }
-    */
+
     var combo = 0
     var maxCombo = 0
-    for (i in 0 until M) {
-        var flag = true
+    var i = 0
+    var successFlag: Boolean
+    var sharpFlag: Boolean
+    var sharp: Int
+    while (i < M){
+        successFlag = true
+        sharpFlag = false
+        sharp = 99
         for (j in 0 until N) {
             when (musicData[i][j]) {
                 "-" -> {
-                    if(playData[i][j] != musicData[i][j]){
-                        flag = false
-                        break
+                    if(playData[i][j] != "-"){
+                        successFlag = false
+                        if(sharpFlag){
+                            successFlag = false
+                            if(i == (M - 1)){
+                                break
+                            }
+                            while (musicData[i + 1][sharp] == "#") {
+                                i++
+                                if(i == (M - 1)){
+                                    break
+                                }
+                            }
+                            break
+                        }
                     }
                 }
                 "+" -> {
-                    if(playData[i][j] != musicData[i][j]){
-                        flag = false
-                        break
+                    if(playData[i][j] != "+"){
+                        successFlag = false
                     }
                 }
                 "#" -> {
-                    if(playData[i][j] != "+"){
-                        flag = false
-                        break
+                    sharpFlag = true
+                    sharp = j
+                    when (playData[i][j]) {
+                        "-" -> {
+                            successFlag = false
+                            if(i == (M - 1)){
+                                break
+                            }
+                            while (musicData[i + 1][j] == "#") {
+                                i++
+                                if(i == (M - 1)){
+                                    break
+                                }
+                            }
+                            break
+                        }
+                        "+" -> {
+                            if(!successFlag){
+                                if(i == (M - 1)){
+                                    break
+                                }
+                                while (musicData[i + 1][j] == "#") {
+                                    i++
+                                    if(i == (M - 1)){
+                                        break
+                                    }
+                                }
+                                break
+                            }
+                        }
                     }
                 }
             }
         }
-        if(flag){
+        if(successFlag){
             combo++
             if(combo > maxCombo){
                 maxCombo = combo
@@ -65,6 +94,7 @@ fun main(args: Array<String>) {
         }else{
             combo = 0
         }
+        i++
     }
     println(maxCombo)
 }
