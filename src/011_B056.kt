@@ -16,6 +16,7 @@ fun main(args: Array<String>) {
         }
     }
 
+
     var combo = 0
     var maxCombo = 0
     var i = 0
