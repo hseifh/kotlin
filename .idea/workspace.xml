@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ca467a9-38bc-4f69-be72-ba52ea6920f0" name="Changes" comment="05/05">
+    <list default="true" id="8ca467a9-38bc-4f69-be72-ba52ea6920f0" name="Changes" comment="05/06">
+      <change afterPath="$PROJECT_DIR$/src/014_A027.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -415,7 +416,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746377520429</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="05/06">
+      <option name="closed" value="true" />
+      <created>1746462008681</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1746462008681</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -430,7 +439,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="10/03" />
     <MESSAGE value="10/04" />
     <MESSAGE value="10/04&#10;&#10;(cherry picked from commit a46bbab19bd58942756a33f078105b1832b3cb20)" />
     <MESSAGE value="10/05" />
@@ -455,7 +463,8 @@
     <MESSAGE value="05/03" />
     <MESSAGE value="05/04" />
     <MESSAGE value="05/05" />
-    <option name="LAST_COMMIT_MESSAGE" value="05/05" />
+    <MESSAGE value="05/06" />
+    <option name="LAST_COMMIT_MESSAGE" value="05/06" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
