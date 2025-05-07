@@ -20,16 +20,11 @@ fun main(args: Array<String>) {
     var work : String
     var flag : Boolean
     a@ for (i in 0 until M) {
-        //println("i = " + i)
-        //println("p[i] = " + p[i])
         work = p[i].get(0).toString()
         flag = false
         b@ for (j in 1 until (t.size - 1)) {
-            //println("i = " + i)
             c@ for (k in 1 until (t[j].size - 1)) {
-                //println(t[j][k] + "と" + work)
                 if(t[j][k] == work){
-                    //println("if内")
                     flag = check(t,j,k,p[i],1)
                     if(flag){
                         break@b
@@ -45,21 +40,12 @@ fun main(args: Array<String>) {
     }
 }
 fun check(t: Array<Array<String>>, row: Int, col: Int, p: String, index: Int): Boolean {
-    /*
-    println(p)
-    for (i in 0 until t.size) {
-        for (j in 0 until t[i].size) {
-            print(t[i][j])
-        }
-        println()
-    }
-    */
     if(p.length == index){
         return true
     }
-    var tCopy = t.copyOf()
+    //配列クローン
+    val tCopy = Array(t.size) { i -> t[i].clone() }
     tCopy[row][col] = "#"
-    var flag = false
 
     //上が空白
     if(p.get(index).toString() == t[row - 1][col]){
