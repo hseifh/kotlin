@@ -32,11 +32,7 @@ fun main(args: Array<String>) {
                 }
             }
         }
-        if(flag){
-            println("yes")
-        }else{
-            println("no")
-        }
+        println(if (flag) "yes" else "no")
     }
 }
 fun check(t: Array<Array<String>>, row: Int, col: Int, p: String, index: Int): Boolean {

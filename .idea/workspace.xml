@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ca467a9-38bc-4f69-be72-ba52ea6920f0" name="Changes" comment="05/07">
-      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
+    <list default="true" id="8ca467a9-38bc-4f69-be72-ba52ea6920f0" name="Changes" comment="05/08">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/014_A020.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/014_A020.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -439,7 +440,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746623614724</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="05/08">
+      <option name="closed" value="true" />
+      <created>1746710648096</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1746710648096</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -454,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="10/04&#10;&#10;(cherry picked from commit a46bbab19bd58942756a33f078105b1832b3cb20)" />
     <MESSAGE value="10/05" />
     <MESSAGE value="10/06" />
     <MESSAGE value="10/07" />
@@ -479,7 +487,8 @@
     <MESSAGE value="05/05" />
     <MESSAGE value="05/06" />
     <MESSAGE value="05/07" />
-    <option name="LAST_COMMIT_MESSAGE" value="05/07" />
+    <MESSAGE value="05/08" />
+    <option name="LAST_COMMIT_MESSAGE" value="05/08" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
