@@ -12,22 +12,18 @@ fun main(args: Array<String>) {
     val pAry = Array(M) {
         readln()
     }
-    var work : Char
-    var flag : Boolean
     a@ for (p in pAry) {
-        work = p[0]
-        flag = false
         b@ for (j in 1 until (t.size - 1)) {
             c@ for (k in 1 until (t[j].size - 1)) {
-                if(t[j][k] == work){
-                    flag = check(t,j,k,p,1)
-                    if(flag){
-                        break@b
+                if(t[j][k] == p[0]){
+                    if(check(t,j,k,p,1)){
+                        println("yes")
+                        continue@a
                     }
                 }
             }
         }
-        println(if (flag) "yes" else "no")
+        println("no")
     }
 }
 fun check(
