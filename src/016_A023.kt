@@ -39,7 +39,6 @@ fun main(args: Array<String>) {
     }
 
      */
-
     for (flag in flagAry) {
         if(flag){
             serial++
