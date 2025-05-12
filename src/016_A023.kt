@@ -8,7 +8,6 @@ fun main(args: Array<String>) {
     //while (i < dStr.length) {
         //println(dStr.substring(i,(seven + i)))
         //println(i)
-
         if((dStr.substring(i,(seven + i)).count { it == '0' }) >= 2 ){
             //println(i)
             for (j in i until (i + seven)) {
@@ -20,19 +19,24 @@ fun main(args: Array<String>) {
             i++
         }
     }
-    println(i)
+    //println(i)
     while (i < dStr.length) {
+        //println(i)
+        //println(dStr.substring(i - (seven - 1), (i + 1)))
         //println(i - (seven - 1) + i)
-        if(i >= seven) {
-            println(dStr.substring(i - (seven - 1), i))
-            if ((dStr.substring(i - (seven - 1), i).count { it == '0' }) >= 2) {
-                flagAry[i] = true
-            }
+        if(i <= seven) {
             i++
+            continue
         }
+        //println(dStr.substring(i - (seven - 1), i))
+        if ((dStr.substring(i - (seven - 1), (i + 1)).count { it == '0' }) >= 2) {
+            flagAry[i] = true
+        }
+        i++
     }
     var ans = 0
     var serial = 0
+
     /*
     for (flag in flagAry) {
         println(flag)
