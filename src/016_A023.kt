@@ -5,10 +5,8 @@ fun main(args: Array<String>) {
     val seven = 7
     var i = 0
     while (i < (dStr.length - (seven - 1))) {
-    //while (i < dStr.length) {
-        //println(dStr.substring(i,(seven + i)))
-        //println(i)
-        if((dStr.substring(i,(seven + i)).count { it == '0' }) >= 2 ){
+        //println("dStr.substring(i,i + seven)" + dStr.substring(i,i + seven))
+        if((dStr.substring(i,i + seven).count { it == '0' }) >= 2 ){
             //println(i)
             for (j in i until (i + seven)) {
                 //println(i)
@@ -28,7 +26,7 @@ fun main(args: Array<String>) {
             i++
             continue
         }
-        //println(dStr.substring(i - (seven - 1), i))
+        println("dStr.substring(i - (seven - 1), (i + 1))" + dStr.substring(i - (seven - 1), (i + 1)))
         if ((dStr.substring(i - (seven - 1), (i + 1)).count { it == '0' }) >= 2) {
             flagAry[i] = true
         }
