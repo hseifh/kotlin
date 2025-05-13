@@ -5,11 +5,8 @@ fun main(args: Array<String>) {
     val seven = 7
     var i = 0
     while (i < (dStr.length - (seven - 1))) {
-        //println("dStr.substring(i,i + seven)" + dStr.substring(i,i + seven))
         if((dStr.substring(i,i + seven).count { it == '0' }) >= 2 ){
-            //println(i)
             for (j in i until (i + seven)) {
-                //println(i)
                 flagAry[j] = true
             }
             i += seven
@@ -17,30 +14,21 @@ fun main(args: Array<String>) {
             i++
         }
     }
-    //println(i)
     while (i < dStr.length) {
-        //println(i)
-        //println(dStr.substring(i - (seven - 1), (i + 1)))
-        //println(i - (seven - 1) + i)
-        if(i <= seven) {
+
+        if(i < (seven - 1)) {
             i++
             continue
         }
-        println("dStr.substring(i - (seven - 1), (i + 1))" + dStr.substring(i - (seven - 1), (i + 1)))
         if ((dStr.substring(i - (seven - 1), (i + 1)).count { it == '0' }) >= 2) {
-            flagAry[i] = true
+            for (j in (i - (seven - 1)) until (i + 1)) {
+                flagAry[j] = true
+            }
         }
         i++
     }
     var ans = 0
     var serial = 0
-
-    /*
-    for (flag in flagAry) {
-        println(flag)
-    }
-
-     */
     for (flag in flagAry) {
         if(flag){
             serial++
