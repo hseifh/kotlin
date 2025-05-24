@@ -13,12 +13,71 @@ fun main(args: Array<String>) {
             sArray[i][j] = brStr[j - 1]
         }
     }
-    println(H)
-    println(W)
-    for (sAry in sArray) {
-        for (s in sAry) {
-            print(s)
+    var ilList = mutableListOf<Island>()
+    var cList = mutableListOf<Coordinate2>()
+    for (i in 1 until (sArray.size - 1)) {
+        for (j in 1 until (sArray[i].size - 1)) {
+            if(sArray[i][j] == '#'){
+                sArray[i][j] = '*'
+                ilList.add(Island(1,0))
+                cList.add(Coordinate2(i,j))
+                while(cList.size > 0) {
+                    //右が陸
+                    when (sArray[cList.first().i][cList.first().j + 1]) {
+                        '#' -> {
+                            cList.add(Coordinate2(cList.first().i,cList.first().j + 1))
+                            ilList.last().land++
+                            sArray[cList.last().i][cList.last().j] = '*'
+                        }
+                        '.' -> {
+                            ilList.last().sea++
+                        }
+                    }
+                    //下が陸
+                    when (sArray[cList.first().i + 1][cList.first().j]) {
+                        '#' -> {
+                            cList.add(Coordinate2(cList.first().i + 1,cList.first().j))
+                            ilList.last().land++
+                            sArray[cList.last().i][cList.last().j] = '*'
+                        }
+                        '.' -> {
+                            ilList.last().sea++
+                        }
+                    }
+                    //左が陸
+                    when (sArray[cList.first().i][cList.first().j - 1]) {
+                        '#' -> {
+                            cList.add(Coordinate2(cList.first().i,cList.first().j - 1))
+                            ilList.last().land++
+                            sArray[cList.last().i][cList.last().j] = '*'
+                        }
+                        '.' -> {
+                            ilList.last().sea++
+                        }
+                    }
+                    //上が陸
+                    when (sArray[cList.first().i - 1][cList.first().j]) {
+                        '#' -> {
+                            cList.add(Coordinate2(cList.first().i - 1,cList.first().j))
+                            ilList.last().land++
+                            sArray[cList.last().i][cList.last().j] = '*'
+                        }
+                        '.' -> {
+                            ilList.last().sea++
+                        }
+                    }
+                    cList.removeFirst()
+                }
+            }
         }
-        println()
+    }
+    //降順ソート
+    val sortilList = ilList.sortedWith(
+        compareByDescending<Island> { it.land }.thenByDescending { it.sea }
+    )
+    for (il in sortilList) {
+        println("" + il.land + " " + il.sea)
     }
 }
+class Island(var land: Int, var sea: Int)
+class Coordinate2(var i: Int, var j: Int)

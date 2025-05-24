@@ -24,13 +24,13 @@ public class Main02 {
                 }
             }
         }
-        ArrayList<Island> islandList = new ArrayList<>();
+        ArrayList<Island1> islandList = new ArrayList<>();
         ArrayList<Coordinate6> ijList = new ArrayList<>();
         int contSpace;
         for(int i = 1; i < field.length - 1; i++) {
             for(int j = 1; j < field[i].length - 1; j++) {
                 if(field[i][j].equals("#")) {
-                    islandList.add(new Island());
+                    islandList.add(new Island1());
                     ijList.add(new Coordinate6(i,j));
                     while(true) {
                         if(ijList.size() == 0) {
@@ -171,7 +171,7 @@ public class Main02 {
                 }
             }
         }
-        for(Island il:islandList) {
+        for(Island1 il:islandList) {
             System.out.println(il.getLand() + " " + il.getSea());
         }
 
@@ -249,7 +249,7 @@ class Coordinate6 {
         LandSeaCheck = landSeaCheck;
     }
 }
-class Island {
+class Island1 {
     private int land;
     private int sea;
 
