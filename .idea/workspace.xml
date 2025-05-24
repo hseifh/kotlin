@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ca467a9-38bc-4f69-be72-ba52ea6920f0" name="Changes" comment="05/24">
+    <list default="true" id="8ca467a9-38bc-4f69-be72-ba52ea6920f0" name="Changes" comment="05/25">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/018_A021.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/018_A021.kt" afterDir="false" />
     </list>
@@ -88,14 +88,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724524020265</updated>
-    </task>
-    <task id="LOCAL-00020" summary="10/14">
-      <option name="closed" value="true" />
-      <created>1728908191406</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1728908191406</updated>
     </task>
     <task id="LOCAL-00021" summary="10/15">
       <option name="closed" value="true" />
@@ -481,7 +473,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748062335380</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="05/25">
+      <option name="closed" value="true" />
+      <created>1748108818329</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1748108818332</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,7 +496,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="04/28" />
     <MESSAGE value="04/29" />
     <MESSAGE value="04/30" />
     <MESSAGE value="05/02" />
@@ -521,7 +520,8 @@
     <MESSAGE value="05/22" />
     <MESSAGE value="05/23" />
     <MESSAGE value="05/24" />
-    <option name="LAST_COMMIT_MESSAGE" value="05/24" />
+    <MESSAGE value="05/25" />
+    <option name="LAST_COMMIT_MESSAGE" value="05/25" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

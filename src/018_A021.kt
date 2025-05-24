@@ -13,31 +13,13 @@ fun main(args: Array<String>) {
             sArray[i][j] = brStr[j - 1]
         }
     }
-
     var ilList = mutableListOf<Island>()
     var cList = mutableListOf<Coordinate2>()
-    fun isisland(direction:Char) {
-        println("isisland")
-        when (sArray[cList.first().i][cList.first().j]) {
+    fun isisland(row:Int,col:Int) {
+        when (sArray[row][col]) {
             '#' -> {
-                when (direction){
-                    'E' -> {
-                        cList.add(Coordinate2(cList.first().i,cList.first().j + 1))
-                        sArray[cList.last().i][cList.last().j + 1] = '*'
-                    }
-                    'S' -> {
-                        cList.add(Coordinate2(cList.first().i + 1,cList.first().j))
-                        sArray[cList.last().i + 1][cList.last().j] = '*'
-                    }
-                    'W' -> {
-                        cList.add(Coordinate2(cList.first().i,cList.first().j - 1))
-                        sArray[cList.last().i][cList.last().j - 1] = '*'
-                    }
-                    'N' -> {
-                        cList.add(Coordinate2(cList.first().i - 1,cList.first().j))
-                        sArray[cList.last().i - 1][cList.last().j] = '*'
-                    }
-                }
+                cList.add(Coordinate2(row,col))
+                sArray[row][col] = '*'
                 ilList.last().land++
             }
             '.' -> {
@@ -47,72 +29,19 @@ fun main(args: Array<String>) {
     }
     for (i in 1 until (sArray.size - 1)) {
         for (j in 1 until (sArray[i].size - 1)) {
-            println("for")
             if(sArray[i][j] == '#'){
                 sArray[i][j] = '*'
                 ilList.add(Island(1,0))
                 cList.add(Coordinate2(i,j))
                 while(cList.size > 0) {
-                    //右が陸
-                    /*
-                    when (sArray[cList.first().i][cList.first().j + 1]) {
-                        '#' -> {
-                            cList.add(Coordinate2(cList.first().i,cList.first().j + 1))
-                            ilList.last().land++
-                            sArray[cList.last().i][cList.last().j] = '*'
-                        }
-                        '.' -> {
-                            ilList.last().sea++
-                        }
-                    }
-
-                     */
-                    isisland('E')
-                    //下が陸
-                    isisland('S')
-                    /*
-                    when (sArray[cList.first().i + 1][cList.first().j]) {
-                        '#' -> {
-                            cList.add(Coordinate2(cList.first().i + 1,cList.first().j))
-                            ilList.last().land++
-                            sArray[cList.last().i][cList.last().j] = '*'
-                        }
-                        '.' -> {
-                            ilList.last().sea++
-                        }
-                    }
-
-                     */
-                    //左が陸
-                    isisland('W')
-                    /*
-                    when (sArray[cList.first().i][cList.first().j - 1]) {
-                        '#' -> {
-                            cList.add(Coordinate2(cList.first().i,cList.first().j - 1))
-                            ilList.last().land++
-                            sArray[cList.last().i][cList.last().j] = '*'
-                        }
-                        '.' -> {
-                            ilList.last().sea++
-                        }
-                    }
-
-                     */
-                    //上が陸
-                    isisland('N')
-                    /*
-                    when (sArray[cList.first().i - 1][cList.first().j]) {
-                        '#' -> {
-                            cList.add(Coordinate2(cList.first().i - 1,cList.first().j))
-                            ilList.last().land++
-                            sArray[cList.last().i][cList.last().j] = '*'
-                        }
-                        '.' -> {
-                            ilList.last().sea++
-                        }
-                    }
-                    /
-                     */
+                    //東
+                    isisland(cList.first().i,cList.first().j + 1)
+                    //南
+                    isisland(cList.first().i + 1,cList.first().j)
+                    //西
+                    isisland(cList.first().i,cList.first().j - 1)
+                    //北
+                    isisland(cList.first().i - 1,cList.first().j)
                     cList.removeFirst()
                 }
             }
@@ -125,12 +54,6 @@ fun main(args: Array<String>) {
     for (il in sortilList) {
         println("" + il.land + " " + il.sea)
     }
-
-
-
-    //isisland()
 }
-
 class Island(var land: Int, var sea: Int)
-
 class Coordinate2(var i: Int, var j: Int)
