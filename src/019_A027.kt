@@ -34,6 +34,7 @@ fun main(args: Array<String>) {
                     (bArray[i][j] == 0 ||
                     bArray[i][j] != count) &&
                     bArray[i][j] != 1
+                    
                     ){
                     bArray[i][j] = count
                     continueFlag = true
