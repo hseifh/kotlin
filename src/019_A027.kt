@@ -22,8 +22,8 @@ fun main(args: Array<String>) {
         return false
     }
     while(true) {
-        for (i in 1 until (bArray.size - 1)) {
-            for (j in 1 until (bArray[i].size - 1)) {
+        for (i in (1 + ans) until (bArray.size - (1 + ans))) {
+            for (j in (1 + ans) until (bArray[i].size - (1 + ans))) {
                 if(bArray[i][j] == '#'){
                     if(isSea(i - 1,j)){
                         cList.add(Coordinate3(i,j))
