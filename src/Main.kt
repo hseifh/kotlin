@@ -15,7 +15,6 @@ fun main() {
         println("i = $i")
     }
     val scanner = Scanner(System.`in`)
-    
 
     val N = scanner.nextInt()
 
