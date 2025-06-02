@@ -18,6 +18,7 @@ fun main() {
 
     val N = scanner.nextInt()
 
+    ß
 
 
     println("${N::class.simpleName}")
