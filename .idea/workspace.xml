@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ca467a9-38bc-4f69-be72-ba52ea6920f0" name="Changes" comment="06/20">
+    <list default="true" id="8ca467a9-38bc-4f69-be72-ba52ea6920f0" name="Changes" comment="06/22">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,22 +87,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724524020265</updated>
-    </task>
-    <task id="LOCAL-00046" summary="05/08">
-      <option name="closed" value="true" />
-      <created>1746711616254</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1746711616255</updated>
-    </task>
-    <task id="LOCAL-00047" summary="05/08">
-      <option name="closed" value="true" />
-      <created>1746712297631</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1746712297631</updated>
     </task>
     <task id="LOCAL-00048" summary="05/09">
       <option name="closed" value="true" />
@@ -480,7 +464,23 @@
       <option name="project" value="LOCAL" />
       <updated>1750351004882</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="06/21">
+      <option name="closed" value="true" />
+      <created>1750439658705</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1750439658705</updated>
+    </task>
+    <task id="LOCAL-00096" summary="06/22">
+      <option name="closed" value="true" />
+      <created>1750531752727</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1750531752728</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,8 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="05/23" />
-    <MESSAGE value="05/24" />
     <MESSAGE value="05/25" />
     <MESSAGE value="05/26" />
     <MESSAGE value="05/27" />
@@ -520,7 +518,9 @@
     <MESSAGE value="06/18" />
     <MESSAGE value="06/19" />
     <MESSAGE value="06/20" />
-    <option name="LAST_COMMIT_MESSAGE" value="06/20" />
+    <MESSAGE value="06/21" />
+    <MESSAGE value="06/22" />
+    <option name="LAST_COMMIT_MESSAGE" value="06/22" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
