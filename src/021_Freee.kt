@@ -34,9 +34,8 @@ fun solution2(reservations: Array<Array<Int>>): Int {
 }
 
 fun aaaa(arr: Array<Int>): Array<Int> {
-    var ary = arr.copyOf()
-    for(i in 0 until arr.size){
-        ary[i] = ary[i] * 2
-    }
-    return ary
+    //var ary = arr.copyOf()
+    var ary = arr.map { it * 2 }
+
+    return ary.toTypedArray()
 }

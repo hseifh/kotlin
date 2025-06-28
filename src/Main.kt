@@ -2,8 +2,23 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 import java.util.Scanner
 fun main() {
-    println(15 / 6)
+    var numbers = IntArray(5)
+    for(n in numbers){ println(n) }
+    val original = intArrayOf(1,2,3,4,5)
+    var ary = original.copyOf()
+    //var ary = original.map { it * 2 }
+    //var ary = original.filter { it % 2 == 0 }
+    //for(a in ary){ println(a) }
+    //for(o in original){ println(o) }
+    //ary.toIntArray()
+
+    println(ary::class.simpleName)
     System.exit(0)
+
+    println(15.times(2))
+    //println(times(15,2))
+
+
     val name = "Kotlin1"
     //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
     // to see how IntelliJ IDEA suggests fixing it.
