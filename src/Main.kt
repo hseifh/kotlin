@@ -19,7 +19,6 @@ fun main() {
     //println(times(15,2))
 
 
-
     val name = "Kotlin1"
     //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
     // to see how IntelliJ IDEA suggests fixing it.
