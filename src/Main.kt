@@ -10,6 +10,7 @@ fun main() {
 
 
 
+
     println(ary::class.simpleName)
     System.exit(0)
 
