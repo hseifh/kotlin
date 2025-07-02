@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ca467a9-38bc-4f69-be72-ba52ea6920f0" name="Changes" comment="06/30" />
+    <list default="true" id="8ca467a9-38bc-4f69-be72-ba52ea6920f0" name="Changes" comment="07/01">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/021_Freee.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/021_Freee.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/022_B039.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/022_B039.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,14 +91,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724524020265</updated>
-    </task>
-    <task id="LOCAL-00054" summary="05/11">
-      <option name="closed" value="true" />
-      <created>1746964930854</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1746964930854</updated>
     </task>
     <task id="LOCAL-00055" summary="05/12">
       <option name="closed" value="true" />
@@ -479,7 +476,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751216315443</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="07/01">
+      <option name="closed" value="true" />
+      <created>1751301260227</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1751301260227</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -494,7 +499,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="06/01" />
     <MESSAGE value="06/02" />
     <MESSAGE value="06/0３" />
     <MESSAGE value="06/04" />
@@ -519,7 +523,8 @@
     <MESSAGE value="06/27" />
     <MESSAGE value="06/29" />
     <MESSAGE value="06/30" />
-    <option name="LAST_COMMIT_MESSAGE" value="06/30" />
+    <MESSAGE value="07/01" />
+    <option name="LAST_COMMIT_MESSAGE" value="07/01" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

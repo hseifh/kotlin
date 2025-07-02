@@ -5,16 +5,17 @@ fun main(args: Array<String>) {
     var maxY = 0
     var StrinbrStr = null
     //列
-    val m = brStr.split(" ")[0].toInt()
+    //val m = brStr.split(" ")[0].toInt()
     //行
-    val N = brStr.split(" ")[1].toInt()
-    var bArray = Array(N + 2) {
-        Array(M + 2) { '1' } //全て壁
-    }
+    //val N = brStr.split(" ")[1].toInt()
+    //var bArray = Array(N + 2) {
+    //    Array(M + 2) { '1' } //全て壁
+    //}
     var start_i = 0
     var start_j = 0
     var goal_i = 0
     var goal_j = 0
+    /*
     for (i in 1 until (bArray.size - 1)) {
         brStr = readln()
         for (j in 1 until (bArray[i].size - 1)) {
@@ -29,6 +30,8 @@ fun main(args: Array<String>) {
             }
         }
     }
+
+     */
     /*
     println("" + M + " " + N)
     for (i in 0 until bArray.size) {
@@ -40,6 +43,7 @@ fun main(args: Array<String>) {
     System.exit(0)
     */
 
+    /*
     var cList = mutableListOf<Coordinate4>()
     cList.add(Coordinate4(start_i,start_j))
     var ans = 0
@@ -69,6 +73,9 @@ fun main(args: Array<String>) {
         }
     }
 
+
+     */
+    /*
     while(true) {
         if(cList.isEmpty()){
             break
@@ -116,5 +123,7 @@ fun main(args: Array<String>) {
     println(ans)
 
 
+
+     */
 }
 class Coordinate(var i: Int, var j: Int)

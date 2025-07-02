@@ -35,7 +35,7 @@ fun solution2(reservations: Array<Array<Int>>): Int {
 
 fun aaaa(arr: Array<Int>): Array<Int> {
     //var ary = arr.copyOf()
-    var ary = arr.map { it * 2 }
+    var ary = arr.map { it * 2 }.toTypedArray()
 
-    return ary.toTypedArray()
+    return ary
 }
