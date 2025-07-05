@@ -9,7 +9,6 @@ fun main() {
     ary.toMutableList().add(2)
 
 
-
     println(ary::class.simpleName)
     System.exit(0)
 
