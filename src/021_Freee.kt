@@ -141,6 +141,7 @@ fun solution4(nums: Array<Int>, target: Int): Int {
 
     var result = 0
 
+
     // 余り 0 は1つまで（0+0 が target になるため）
     if (count[0] > 0) result += 1
 
