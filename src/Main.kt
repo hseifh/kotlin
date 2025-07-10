@@ -19,6 +19,7 @@ fun main() {
     //for(o in original){ println(o) }
     //ary.toIntArray() //リスト → 配列
 
+
     println(15.times(2))
     //println(times(15,2))
 
