@@ -9,6 +9,7 @@ fun main() {
     for(n in ary){ println(n) }
 
 
+    
     println(ary::class.simpleName)
     System.exit(0)
 
