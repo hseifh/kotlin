@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ca467a9-38bc-4f69-be72-ba52ea6920f0" name="Changes" comment="07/11">
+    <list default="true" id="8ca467a9-38bc-4f69-be72-ba52ea6920f0" name="Changes" comment="10/28">
+      <change afterPath="$PROJECT_DIR$/src/023_B136.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,14 +89,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724524020265</updated>
-    </task>
-    <task id="LOCAL-00061" summary="05/17">
-      <option name="closed" value="true" />
-      <created>1747414719891</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1747414719892</updated>
     </task>
     <task id="LOCAL-00062" summary="05/18">
       <option name="closed" value="true" />
@@ -482,7 +474,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752167357003</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="10/28">
+      <option name="closed" value="true" />
+      <created>1761588763531</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1761588763535</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,7 +497,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="06/10" />
     <MESSAGE value="06/11" />
     <MESSAGE value="06/12" />
     <MESSAGE value="06/13" />
@@ -522,7 +521,8 @@
     <MESSAGE value="07/07" />
     <MESSAGE value="07/08" />
     <MESSAGE value="07/11" />
-    <option name="LAST_COMMIT_MESSAGE" value="07/11" />
+    <MESSAGE value="10/28" />
+    <option name="LAST_COMMIT_MESSAGE" value="10/28" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
